@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<title>闪电马甲切换器</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="jquery-1.7.2.min.js"></script>
+	<script src="option.js"></script>
+    <style>
+		body {
+			background-color: #F4F4F4;
+			color: black;
+			font-family: arial,sans-serif;
+			font-size: 13px;
+		}
+		#content {
+			background-color: white;
+			border-color: #ABD;
+			border-style: solid;
+			border-width: 4px;
+			margin: 40px auto 0;
+			padding: 12px;
+			width: 600px;
+			-webkit-border-radius: 12px;
+		}
+		.buttons {
+			clear: left;
+			padding: 20px 10px 10px;
+		}
+		#save_status {
+			background-color: #FEA;
+			font-weight: bold;
+			margin-left: 10px;
+			opacity: 0;
+			padding: 3px;
+		}
+		.btn-save{
+			display: inline-block;
+			width: 188px;
+			height: 30px;
+			border: 1px solid #18509B;
+			border-radius: 3px;
+			background: url("img/un_btn_blue.png");
+			font-size: 16px;
+			text-align: center;
+			color: white;
+			cursor: pointer;
+			line-height: 28px;
+			text-shadow: 0 0 3px rgba(204, 204, 255, .4);
+			margin-left:55px;
+		}
+		.btn-save:hover { background-position:0 -30px; text-decoration:none;}
+    .btn-save:active { box-shadow:0 1px 3px #134496 inset;}
+    .btn-save:disabled { background:grey; cursor:default;}
+		
+		.delete-button {
+			height: 22px; 
+			width: 26px;
+			background: whitesmoke url("img/delete.png") -0px -0px no-repeat;
+		}
+		.check-button{
+			height: 22px; 
+			width: 80px;
+			background: whitesmoke url("img/icon_true.png") -0px -0px no-repeat;
+		}
+		.login-user-name{
+		  width: 180px;
+		}
+		
+		.add-button{
+			display: inline-block;
+			position: relative;
+			width: 26px;
+			height: 26px;
+			margin-top: 10px;
+			margin-left:26px;
+			float:left;
+			cursor: pointer;
+			background: url("img/main_menu_sprite.png") -80px -170px no-repeat;
+		}
+		
+		.add-button:hover{
+			background: url("img/main_menu_sprite.png") -80px -210px no-repeat;
+		}
+		
+		#user_table{
+		  width: 500px;
+		  margin: auto;
+		}
+    </style>
+</head>
+<body>
+	<div id="content">
+		<table border="0" id="user_table" cellspacing="0" cellpadding="0">
+			<tr style="font-size:20px" id="account_header">
+				<th></th>
+				<th>显示名</th>
+				<th>用户名</th>
+				<th>口令</th>
+				<th></th>
+			</tr>
+		</table>
+		<div style="height:30px"><a class="add-button" id="add_button"></a></div>
+		<div class="buttons">
+			<button id="btn_save" class="btn-save" disabled>保存</button>
+			<span id="save_status">好，给您存好了.</span>
+    </div>
+	</div>
+	
+	<div id="template" style="display:none">
+		<table id="account">
+			<tr style="height:28px;">
+				<td><button class="delete-button"></button></td>
+				<td><input class="display-name" type='text' value="看图版小明"/></td>
+				<td><input class="login-user-name" type='text' value="Simon"/></td>
+				<td><input class="login-password" type='password' value="Ji"/></td>
+				<td><button class="check-button">验证</button></td>
+			</tr>
+		<table>
+	</div>
+</body>
+</html>

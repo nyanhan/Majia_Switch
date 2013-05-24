@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>Kantuban Horse Coat Extension's Popup</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="jquery-1.7.2.min.js"></script>
+	<script src="popup.js"></script>
+    <style>
+		body {
+			width: 100px;
+			padding: 0px !important;
+			margin: 0px !important;
+			border: none !important
+		}
+		.list { background:#1959c4; border-radius:3px; box-shadow:0 0 5px #999; z-index:22;}
+		.list a { display:block; color:#fff; font-size:14px; line-height:32px; cursor:pointer; text-align:center}
+		.list a:hover { background-color:#308fe0;}
+		#option_link { padding:1px 8px; border-top:1px solid #fff; border-bottom:1px solid #fff; text-align:right; text-decoration: none;}
+		.other{ background:#1959c4; text-align: right; display:block; color:#fff; font-size:14px; line-height:32px; cursor:pointer; padding-right: 8px;}
+    </style>
+</head>
+<body>
+	<div class="list" id='account_list'>
+		<a id="option_link" href="options.html" target="_blank">配置马甲</a>
+	</div>	
+	<a id="show_weibo_click" class="other">微博点击数</a>
+	<div id="template" style="display:none">
+		<a id='account' data-id='1'></a>
+	</div>
+</body>
+</html>
