@@ -82,7 +82,7 @@ function tagPicture() {
 
 			temp = document.createElement("b");
 			temp.style.cssText = "position:absolute;background-color:#fff;";
-			temp.setAttribute("onclick", 'window.open("https://www.kantuban.com:1443/b/pin/' + pic_elements[i].getAttribute("pid") + '/");event.stopPropagation()');
+			temp.setAttribute("onclick", 'window.open("https://www.zhaohaowan.com:1443/b/pin/' + pic_elements[i].getAttribute("pid") + '/");event.stopPropagation()');
 			temp.innerHTML = "管理";
 			pic_elements[i].insertBefore(temp, pic_elements[i].firstChild);
 		}
@@ -92,7 +92,7 @@ function tagPicture() {
 
 function getPictureEditorLink(id, rid) {	
 	var aLink = document.createElement('a');
-	aLink.href = "https://www.kantuban.com:1443/b/pin/" + id + "/";
+	aLink.href = "https://www.zhaohaowan.com:1443/b/pin/" + id + "/";
 	if(rid) {
 		aLink.href += "?rid=" + rid;
 	}
@@ -125,7 +125,7 @@ function tagBoard() {
 
 function getBoardEditorLink(id) {	
 	var aLink = document.createElement('a');
-	aLink.href = "https://www.kantuban.com:1443/b/board/" + id + "/";
+	aLink.href = "https://www.zhaohaowan.com:1443/b/board/" + id + "/";
 	aLink.target= "_blank";
 	var div = document.createElement('div');
 	div.className="icon_default";
@@ -234,7 +234,7 @@ function loginUser(username, password) {
 
 /*
 function logoutUser() {
-	window.location.href = 'http://www.kantuban.com/account/logout';
+	window.location.href = 'http://www.zhaohaowan.com/account/logout';
 }
 
 function loginUser(username, password) {

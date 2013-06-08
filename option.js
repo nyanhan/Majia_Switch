@@ -107,7 +107,7 @@ function save(){
 
 function loginUser(username, password) {
 	var xmlhttp = new XMLHttpRequest();
-	var url = 'http://www.kantuban.com/j/login';
+	var url = 'http://www.zhaohaowan.com/j/login';
 	var params = 'account=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password);
 	
 	xmlhttp.onreadystatechange = function() {

@@ -12,7 +12,7 @@
   "permissions": [
     	"storage",
 		  "tabs",
-		  "http://*.kantuban.com/",
+		  "http://*.zhaohaowan.com/",
       "http://*.weibo.com/*",
       "https://*.weibo.com/*",
 		  "unlimitedStorage"
@@ -25,7 +25,7 @@
   "content_scripts" : [
     {
       "matches" : [
-        "http://www.kantuban.com/*",
+        "http://www.zhaohaowan.com/*",
         "http://*.weibo.com/*"
       ],
       "js" : ["contentscript.js"],
