@@ -58,6 +58,7 @@ function tagging() {
 function tagPicture() {
 	var pic_elements = document.getElementsByClassName('pic_item box_regular');
 	var tagged = false;
+    var temp;
 	for (i = 0; i < pic_elements.length; i++) {
 		if (pic_elements[i].className.search("EditorClass") < 0) {
 			pic_elements[i].className += " EditorClass";
@@ -67,14 +68,18 @@ function tagPicture() {
 			} else {
 				rid = null;
 			}			
-			iconBox.appendChild(getPictureEditorLink(pic_elements[i].attributes['data-pid'].value, rid));
+
+            temp = pic_elements[i].attributes['data-pid'];
+
+            if(temp) {
+                iconBox.appendChild(getPictureEditorLink(temp.value, rid));
+            }
+
 			tagged = true;
 		}
 	}
 
 	pic_elements = document.querySelectorAll('a[pid]');
-
-	var temp;
 
 	for (i = 0; i < pic_elements.length; i++) {
 		if (pic_elements[i].className.search("EditorClass") < 0) {
