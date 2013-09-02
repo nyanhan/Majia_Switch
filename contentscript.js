@@ -56,7 +56,7 @@ function tagging() {
 	setTimeout('tagging()', 1000);
 }
 function tagPicture() {
-	var pic_elements = document.getElementsByClassName('pic_item box_regular transport');
+	var pic_elements = document.getElementsByClassName('pic_item box_regular');
 	var tagged = false;
 	for (i = 0; i < pic_elements.length; i++) {
 		if (pic_elements[i].className.search("EditorClass") < 0) {
