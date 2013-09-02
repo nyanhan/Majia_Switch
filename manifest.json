@@ -1,6 +1,6 @@
 ﻿{
   "name": "马甲账户切换",
-  "version": "2.4.1",
+  "version": "1.1.1",
   "manifest_version": 2,
   "description": "To make editor's life easier, this extension switch Kantuban users by pipelining logout, fillin password and login browser actions.",
   "icons": {"16": "img/icon.jpg",
